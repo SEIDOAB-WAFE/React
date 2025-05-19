@@ -27,7 +27,7 @@ export function App02_02() {
 export function App02_03() {
   return (
     <>
-    <PropsFunc02/>
+    <PropsFunc02 name="Martin"/>
     <PropsClass02a friend="Idefix"/>
     <PropsClass02b name="Idefix"/>
     </>
