@@ -1,17 +1,17 @@
 import React from 'react'
 import '../../../css/flexbox_5.css';
 
-export function Colorboxes() {
+export function Colorboxes(props) {
+
+  console.log(props.colors);
+
   return (
     <>
-    <div>colorboxes</div>
+    <div>{props.title}</div>
     <div className="FlexWrap">
-        <Colorbox color="Red"/>
-        <Colorbox color="Orange"/>
-        <Colorbox color="Green"/>
-        <Colorbox color="Yellow"/>
-        <Colorbox color="Blue"/>
-	</div>
+
+      {props.colors.map((color)=><Colorbox color={color}/>)}
+	  </div>
     </>
   )
 }
@@ -20,5 +20,5 @@ export function Colorbox(props)
 {
 
   const c = `FlexItem ${props.color}`;
-  return (<div className={c}>Red box</div>)
+  return (<div className={c}>{props.color}</div>)
 }

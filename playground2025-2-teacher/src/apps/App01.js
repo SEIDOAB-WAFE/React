@@ -4,6 +4,7 @@ import Animal from '../models/animal.js';
 import {Helloworld, MyFirstReactComp, MySecondReactComp} from "../plays/play01/components/helloworld.js";
 import { Latinsentences } from '../plays/play01/components/latinsentences.js';
 import { Colorboxes } from '../plays/play01/components/colorboxes.js';
+import { Cards01, Cards02 } from '../plays/play01/components/cards.js';
 
 //https://legacy.reactjs.org/docs/strict-mode.html#detecting-unexpected-side-effects
 //You will notice React in Dev mode mounts the components twice.
@@ -22,7 +23,8 @@ export function App01_02() {
 
   return (
     <>
-    <Colorboxes colors={["Green", "Red"]}/>
+    <Colorboxes title="Some boxes" colors={["Green", "Red", "Blue", "Yellow", "Yellow"]}/>
+    <Colorboxes title="Other boxes" colors={["Orange", "Yellow"]}/>
     </>
   );}
 
@@ -30,7 +32,7 @@ export function App01_03() {
 
   return (
     <>
-    <Helloworld/>
+    <Cards02/>
     </>
   );}
 
