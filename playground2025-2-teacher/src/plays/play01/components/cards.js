@@ -84,9 +84,13 @@ export function Cards03(props) {
 
   const onClick = (e) => {
 
-    console.log(e.target.innerText);
+    console.log(`Header click ${e.target.innerText}`);
   }
 
+  const onImageClick = (e) => {
+
+    console.log(`Image click recognized by parent ${e.target.src}`);
+  }
   
   return (
     <>
@@ -94,7 +98,9 @@ export function Cards03(props) {
       <div className="container px-4 py-4" id="home">
         <div className="d-flex flex-wrap justify-content-between bg-body-tertiary p-5 rounded">
 
-          {props.images.map (image => <Card03 img={image.img} title={image.title} text={image.text}/>)}
+          {props.images.map (image => 
+            <Card03 img={image.img} title={image.title} text={image.text} onImageClick={onImageClick}/>
+            )}
 
         </div>
       </div>
@@ -108,7 +114,9 @@ export function Cards03(props) {
 function Card03(props) {
 
   const onClick = (e) => {
-    console.log(e.target.src)
+    console.log(`Image click ${e.target.src}`)
+
+    if (props.onImageClick) props.onImageClick(e);
   }
 
   const src = `./imgs/${props.img}`;
