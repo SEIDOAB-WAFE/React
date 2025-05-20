@@ -94,17 +94,14 @@ export function Cards03(props) {
   
   return (
     <>
-    <div onClick={onClick}>cards</div>
-      <div className="container px-4 py-4" id="home">
-        <div className="d-flex flex-wrap justify-content-between bg-body-tertiary p-5 rounded">
+      <div className="d-flex flex-wrap justify-content-between bg-body-tertiary p-5 rounded">
 
-          {props.images.map (image => 
-            <Card03 img={image.img} title={image.title} text={image.text} onImageClick={onImageClick}/>
-            )}
+        {props.images.map (image => 
+          <Card03 img={image.img} title={image.title} text={image.text} onImageClick={onImageClick}/>
+          )}
 
-        </div>
       </div>
-      </>
+    </>
   )
 }
 
