@@ -46,12 +46,12 @@ export function App01_04() {
 
   const onClickHeader = (e) => 
     {
-      console.log(`onClickHeader`);
+      console.log(`App onClickHeader`);
     }
 
   const onClickRow = (e) => 
     {
-      console.log(`onClickRow rowitemid: ${e.rowid}`);
+      console.log(`App onClickRow rowitemid: ${e.rowid}`);
     }
 
   return (

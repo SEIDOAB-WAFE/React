@@ -107,9 +107,7 @@ export function TableTemplate06(props) {
       <div className="row mb-2 text-center" onClick={onClickHeader}>
       { 
         props?.headers?.map((item, idx) => 
-            <>
             <div key={idx} className="col-md-2 themed-grid-head-col">{item}</div>
-            </>
           )
       }
       </div>
