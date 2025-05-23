@@ -59,8 +59,6 @@ export function App05_06() {
   return (
     <>
     <TimeTickerFunc06/>
-    <TimeTickerClass06/>
-    <TimeTickerClass06a/>
     </>
     );}
 
@@ -69,6 +67,5 @@ export function App05_07() {
   return (
     <>
     <ReadWebApiFunc07/>
-    <ReadWebApiClass07/> 
     </>
     );}

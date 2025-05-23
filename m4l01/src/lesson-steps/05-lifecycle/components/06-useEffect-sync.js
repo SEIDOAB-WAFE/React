@@ -1,4 +1,4 @@
-import React, { Component, useState, useEffect, setState } from "react";
+import React, { Component, useState, useEffect, } from "react";
 
 export function TimeTickerFunc06() {
   const [currentTime, setCurrentTime] = useState(new Date());
@@ -21,7 +21,7 @@ export function TimeTickerFunc06() {
 
     clearInterval(timer);}
 
-}, [setCurrentTime]);
+}, []);
 
 /*
   No dependency array: The effect runs after every render. useEffect(() => { // Runs on every render });

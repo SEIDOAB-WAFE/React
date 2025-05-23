@@ -4,7 +4,7 @@ import {App01_01, App01_02, App01_03, App01_04, App01_05, App01_06, App01_07} fr
 
 function App() {
   return (
-      <App01_07/>
+      <App01_03/>
   );
 }
 
