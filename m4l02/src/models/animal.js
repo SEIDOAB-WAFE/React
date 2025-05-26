@@ -3,7 +3,7 @@
 import { uniqueId, randomNumber, seedGenerator } from '../services/seido-helpers.js';
 
 
-function Animal() {
+export default function Animal() {
  
     this.id = uniqueId();
     this.name = "Ted";
