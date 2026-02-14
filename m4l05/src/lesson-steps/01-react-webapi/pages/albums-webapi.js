@@ -11,7 +11,7 @@ import AlbumDetailsEdit from '../components/album-details-edit';
 
 export function AlbumsWebApi()
 {
-    const service = new musicService(`https://seido-webservice-307d89e1f16a.azurewebsites.net/api`);
+    const service = new musicService(`https://music.api.public.seido.se/api`);
     return (
       <div className="container px-4 py-4 text-start">
 

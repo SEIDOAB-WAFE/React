@@ -11,7 +11,7 @@ export function SearchInPage02() {
     {
       console.log (`onSave invoked`);
       
-      const service = new musicService(`https://seido-webservice-307d89e1f16a.azurewebsites.net/api`);
+      const service = new musicService(`https://music.api.public.seido.se/api`);
       const a = await service.readAlbumsAsync (0, true, e.searchFilter);
 
       setAlbums(a);

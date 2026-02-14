@@ -5,7 +5,7 @@ import {JournalRichtext} from 'react-bootstrap-icons'
 
 export function Musicalbums(props) {
 
-  const uri = `https://seido-webservice-307d89e1f16a.azurewebsites.net/api`;
+  const uri = `https://music.api.public.seido.se/api`;
 
   const [albums, setAlbums] = React.useState({});
   const [filter, setFilter] = useState(props.searchFilter || "");

@@ -14,7 +14,7 @@ export function WebApiListPagingAsyncF03() {
       //Immediately-Invoked Function Expressions (IIFE), pronounced "iffy"
       //(async () => {})()
       (async () => {
-        const service = new musicService(`https://seido-webservice-307d89e1f16a.azurewebsites.net/api`);
+        const service = new musicService(`https://music.api.public.seido.se/api`);
         const data = await service.readAlbumsAsync(pageNr);
         setWapiData(data);
       })();}

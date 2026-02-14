@@ -32,7 +32,7 @@ export function UsingTableTemplate07(props) {
       //setDataPage(d);
 
       (async() => {
-        const service = new musicService("https://seido-webservice-307d89e1f16a.azurewebsites.net/api");
+        const service = new musicService("https://music.api.public.seido.se/api");
 
         const artists = await service.readArtistsAsync(currentPageNr, true, null, pageSize);
 

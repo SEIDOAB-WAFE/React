@@ -15,7 +15,7 @@ export function Musicalbums(props) {
   
   (async () => {
 
-      const service = new musicService(`https://seido-webservice-307d89e1f16a.azurewebsites.net/api`);
+      const service = new musicService(`https://music.api.public.seido.se/api`);
       const a = await service.readAlbumsAsync(0, true, props.searchFilter);
       setAlbums(a);
       setPageMax(a.pageCount);
@@ -30,7 +30,7 @@ export function Musicalbums(props) {
   const onSearch = async (e) => {
     e.preventDefault();  //In case the button is of type submit (default for a button inside a form)
 
-    const service = new musicService(`https://seido-webservice-307d89e1f16a.azurewebsites.net/api`);
+    const service = new musicService(`https://music.api.public.seido.se/api`);
     const _serviceData = await service.readAlbumsAsync(0, true, e.searchFilter);
 
     setAlbums(_serviceData);
@@ -41,7 +41,7 @@ export function Musicalbums(props) {
   const onPrevClick = async (e) => {
     if (pageNr > 0) {
       //own pager activity
-      const service = new musicService(`https://seido-webservice-307d89e1f16a.azurewebsites.net/api`);
+      const service = new musicService(`https://music.api.public.seido.se/api`);
       const _serviceData = await service.readAlbumsAsync(pageNr - 1, true, filter);
 
       setPageNr (pageNr - 1);
@@ -52,7 +52,7 @@ export function Musicalbums(props) {
 
       if (pageNr < pageMax-1) {
         //own pager activity
-        const service = new musicService(`https://seido-webservice-307d89e1f16a.azurewebsites.net/api`);
+        const service = new musicService(`https://music.api.public.seido.se/api`);
         const _serviceData = await service.readAlbumsAsync(pageNr + 1, true, filter);
         
         setPageNr(pageNr + 1);
