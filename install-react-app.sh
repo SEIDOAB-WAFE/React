@@ -24,6 +24,12 @@ npm start
 
 
 
+#to reinstall node modules if you have deleted the node_modules folder, 
+npm install
+
+#to update node modules to the latest version, use
+npm update
+
 
 #for curl in windows powershell see
 #https://www.delftstack.com/howto/powershell/run-curl-command-via-powershell/

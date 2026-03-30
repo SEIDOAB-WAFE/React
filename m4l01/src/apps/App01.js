@@ -22,7 +22,6 @@ export function App01_02() {
   return (
     <>
     <HelloWorld02/>
-    <HelloWorld03/>
     </>
     );}
     
