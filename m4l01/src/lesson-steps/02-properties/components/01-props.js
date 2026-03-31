@@ -40,7 +40,7 @@ export class PropsClass01 extends Component {
         <HelloClass05b timeOfDay="afternoon"/>
    - change the timeOfDay prop as verify the component rendering
 
-2. Create a components that takes a list of names as a prop and renders a list of greetings for each name. 
+2. Create a component that takes a list of names as a prop and renders a list of greetings for each name. 
    For example, if the list is ["Martin", "Sara", "Idefix"] the component should render
     <ul>
       <li>Hello Martin</li>
