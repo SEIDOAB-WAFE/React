@@ -1,7 +1,7 @@
 import '../css/flexbox_5.css'
 
-import { PropsClass01, PropsFunc01 } from '../lesson-steps/02-properties/components/01-props';
-import { PropsFunc02, PropsClass02a, PropsClass02b } from '../lesson-steps/02-properties/components/02-props-default';
+import { PropsClass01, PropsFunc01, Greetings  } from '../lesson-steps/02-properties/components/01-props';
+import { PropsFunc02, PropsClass02a, PropsClass02b} from '../lesson-steps/02-properties/components/02-props-default';
 import { ColorBoxes01, ColorBoxes02, ColorBoxes03 } from '../lesson-steps/02-properties/components/03a-colors-exAnsw';
 import { ColorBoxes04 } from '../lesson-steps/02-properties/components/04-props-type';
 
@@ -11,7 +11,7 @@ export function App02_01() {
     <>
     {//In a function component use props as as parameter
     }
-    <PropsFunc01 name="Martin" friend="Sam" age={30}/>
+    <Greetings name="Martin" names={["Martin", "Sara", "Idefix"]}/>
     </>
     );}
 
