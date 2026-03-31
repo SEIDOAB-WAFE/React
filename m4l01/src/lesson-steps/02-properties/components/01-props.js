@@ -3,12 +3,12 @@ import React, { Component } from 'react'
 
 //https://react.dev/learn/passing-props-to-a-component
 //In a function component use props as as parameter
-export function PropsFunc01(props) {
+export function PropsFunc01(props) {  
   return (
     <>
     <h1>PropsFunc01</h1>
     <p>
-    My name is <em>{props.name}</em>.&nbsp;
+    My name is <em>{props.parent}</em>.&nbsp;
     My friend is <em>{props.friend}</em>.
   </p>
   </>
@@ -39,4 +39,12 @@ export class PropsClass01 extends Component {
         <HelloClass05a timeOfDay="afternoon"/>
         <HelloClass05b timeOfDay="afternoon"/>
    - change the timeOfDay prop as verify the component rendering
+
+2. Create a components that takes a list of names as a prop and renders a list of greetings for each name. 
+   For example, if the list is ["Martin", "Sara", "Idefix"] the component should render
+    <ul>
+      <li>Hello Martin</li>
+      <li>Hello Sara</li>
+      <li>Hello Idefix</li>
+    </ul>
 */

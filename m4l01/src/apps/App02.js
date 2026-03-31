@@ -9,8 +9,9 @@ import { ColorBoxes04 } from '../lesson-steps/02-properties/components/04-props-
 export function App02_01() {
   return (
     <>
-    <PropsFunc01 friend="Sam"/>
-    <PropsClass01 name="Hemronie" friend="Sara"/>
+    {//In a function component use props as as parameter
+    }
+    <PropsFunc01 name="Martin" friend="Sam" age={30}/>
     </>
     );}
 
