@@ -60,8 +60,8 @@ for both Func and Class components:
    		func comp - const [clickCount, setClickCount] = useState (0);
 		class comp - this.state = {clickCount: 0};  
 
-3. Include a seedGenerator and add a click event handler to the jsx div tag presenting the description of the card. 
-   - each time you click on the button a new bogus latin sentence should be presented in the description of the card
+3. Include a seedGenerator and add a click event handler to the jsx p tag presenting the description of the card. 
+   - each time you click on p tag a new bogus latin sentence should be presented in the description of the card
 
 */
 
