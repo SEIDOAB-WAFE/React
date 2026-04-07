@@ -16,7 +16,7 @@ import { WrapperComponent, NestedComponent } from '../lesson-steps/04-dataflow/c
 export function App04_01() {
   return (
     <>
-      <GreetingsFunc01/>
+      <GreetingsFunc01 timeOfDay="hello"/>
       <GreetingsFunc01a name="Martin"/>
     </>
     );}
@@ -24,7 +24,7 @@ export function App04_01() {
 export function App04_02() {
   return (
     <>
-      <QuoteListFunc02a title="God Morning" quotes={[{quote: "Hello World", author: "Martin"}]}/>
+      <QuoteListFunc02a title="God Morning" quotes={[{quote: "Hello World", author: "Martin"}, {quote: "Goodbye", author: "Martin"}]}/>
     </>
     );}
     
