@@ -33,7 +33,7 @@ export function App01_02() {
   
     const onSave = (e) => 
     {
-      console.log (`onSave invoked`);      
+      console.log (`onSave invoked: ${e.person.firstName}`);      
     }  
   
     const onUndo = (e) => 

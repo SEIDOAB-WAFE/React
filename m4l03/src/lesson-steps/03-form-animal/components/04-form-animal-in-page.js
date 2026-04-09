@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {seedGenerator } from '../../../services/seido-helpers';
 import Animal from '../../../models/animal';
-import {FormAnimal03} from './03-form-animal';
+import {FormAnimal03} from './03-form-animal-validation';
 
 export function AnimalPage04() {
 

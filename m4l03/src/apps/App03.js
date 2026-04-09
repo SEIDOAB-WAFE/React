@@ -1,9 +1,9 @@
 import { seedGenerator } from '../services/seido-helpers';
 import Animal from '../models/animal';
 
-import {FormAnimal01} from '../lesson-steps/03-form-animal/components/01-form-animal';
-import {FormAnimal02} from '../lesson-steps/03-form-animal/components/02-form-animal';
-import {FormAnimal03} from '../lesson-steps/03-form-animal/components/03-form-animal';
+import {FormAnimal01} from '../lesson-steps/03-form-animal/components/01-form-animal-uncontrolled';
+import {FormAnimal02} from '../lesson-steps/03-form-animal/components/02-form-animal-controlled';
+import {FormAnimal03} from '../lesson-steps/03-form-animal/components/03-form-animal-validation';
 import {AnimalPage04} from '../lesson-steps/03-form-animal/components/04-form-animal-in-page';
 import {AnimalPage05} from '../lesson-steps/03-form-animal/components/05-form-animal-in-page';
 import {UseAnimalInModal07} from '../lesson-steps/03-form-animal/components/07-use-animal-in-modal';

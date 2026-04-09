@@ -8,6 +8,11 @@ export function FormAnimal01(props) {
   const onSave = (e) => 
   { 
     //We are going to add validation here later
+    const animal = {};
+    animal.name = document.querySelector('#name').value;
+    animal.age = document.querySelector('#age').value;
+    animal.type = document.querySelector('#type').value;
+
     e.animal = animal;
     props.onSave(e);
   }  
@@ -31,15 +36,15 @@ export function FormAnimal01(props) {
 
                 <div className="col-sm-4">
                   <label htmlFor="name" className="form-label">Name</label>
-                  <input type="text" className="form-control" id="name" value={animal.name} required/>
+                  <input type="text" className="form-control" id="name" defaultValue={animal.name} required/>
                 </div>
                 <div className="col-sm-4">
                   <label htmlFor="type" className="form-label">Type</label>
-                  <input type="text" className="form-control" id="type" value={animal.type} required/>
+                  <input type="text" className="form-control" id="type" defaultValue={animal.type} required/>
                 </div>
                 <div className="col-sm-4">
-                  <label htmlFor="age" className="form-label">Type</label>
-                  <input type="number" className="form-control" id="age" value={animal.age} required/>
+                  <label htmlFor="age" className="form-label">Age</label>
+                  <input type="number" className="form-control" id="age" defaultValue={animal.age} required/>
                 </div>
 
               </div>

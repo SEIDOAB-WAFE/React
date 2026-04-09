@@ -43,7 +43,7 @@ export function FormUncontrolled02(props) {
               <div className="row g-3">
                 <div className="col-sm-6">
                   <label htmlFor="firstName" className="form-label">First name</label>
-                  <input type="text" className="form-control" id="firstName" defaultValue="Martin" required/>
+                  <input type="text" className="form-control" id="firstName" value="Martin" required/>
                 </div>
 
                 <div className="col-sm-6">
