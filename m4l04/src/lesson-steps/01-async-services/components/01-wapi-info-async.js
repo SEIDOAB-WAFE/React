@@ -33,12 +33,12 @@ export function WebApiInfoAsyncF01() {
     <div>
       <h1>WebApi info</h1>
         <ul>
-          <li>nrSeededMusicGroups: {wapiData?.db?.nrSeededMusicGroups} </li>
-          <li>nrUnseededMusicGroups: {wapiData?.db?.nrUnseededMusicGroups} </li>
-          <li>nrSeededAlbums: {wapiData?.db?.nrSeededAlbums} </li>
-          <li>nrUnseededAlbums: {wapiData?.db?.nrUnseededAlbums} </li>
-          <li>nrSeededArtists: {wapiData?.db?.nrSeededArtists} </li>
-          <li>nrUnseededArtists: {wapiData?.db?.nrUnseededArtists} </li>
+          <li>nrSeededMusicGroups: {wapiData?.item?.db?.nrSeededMusicGroups} </li>
+          <li>nrUnseededMusicGroups: {wapiData?.item?.db?.nrUnseededMusicGroups} </li>
+          <li>nrSeededAlbums: {wapiData?.item?.db?.nrSeededAlbums} </li>
+          <li>nrUnseededAlbums: {wapiData?.item?.db?.nrUnseededAlbums} </li>
+          <li>nrSeededArtists: {wapiData?.item?.db?.nrSeededArtists} </li>
+          <li>nrUnseededArtists: {wapiData?.item?.db?.nrUnseededArtists} </li>
         </ul>
         <p>See console for refresh click confirmation</p>
         <button onClick={onClick}>Refresh</button>
@@ -88,7 +88,7 @@ export class WebApiInfoAsyncC01 extends Component {
       <div>
         <h1>WebApi info</h1>
         <ul>
-          <li>nrSeededMusicGroups: {this.state.wapiData?.db?.nrSeededMusicGroups} </li>
+          <li>nrSeededMusicGroups: {this.state.wapiData?.item?.db?.nrSeededMusicGroups} </li>
           <li>nrUnseededMusicGroups: {this.state.wapiData?.db?.nrUnseededMusicGroups} </li>
           <li>nrSeededAlbums: {this.state.wapiData?.db?.nrSeededAlbums} </li>
           <li>nrUnseededAlbums: {this.state.wapiData?.db?.nrUnseededAlbums} </li>

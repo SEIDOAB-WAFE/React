@@ -24,7 +24,7 @@ export default function NavMenu() {
           <NavDropdown title="Pages" id="basic-nav-dropdown">
               <NavDropdown.Item as={Link} to="../page1">Page1</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="../page1/paramVal1">Page1 with one parameter</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="../page1/Martin/Lenart">Page1 with several parameters</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="../page1/Christmas/Dinner">Page1 with several parameters</NavDropdown.Item>
 
               <NavDropdown.Item as={Link} to="../page2">Page2</NavDropdown.Item>
 
