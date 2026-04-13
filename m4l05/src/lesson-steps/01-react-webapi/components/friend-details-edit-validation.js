@@ -52,7 +52,8 @@ function FriendDetailsEditValidation(props) {
       form.classList.add('was-validated')
     }
     else{
-      e.friend = friend;
+      
+      e.editedFriend = friend;
       props.onSave(e);
     }
   }  

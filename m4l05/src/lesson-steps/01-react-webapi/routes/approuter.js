@@ -9,10 +9,14 @@ import Page3 from '../pages/page3';
 import Error from '../pages/error';
 
 import {Posts, PostLists, Post} from '../pages/posts';
-import {FriendsSimple, FriendsSimpleList, FriendsSimpleView} from '../pages/friends-simple';
-import {FriendsEdit, FriendsEditList, FriendsEditView, FriendsEditEdit} from '../pages/friends-edit';
-import {FriendsEditVal, FriendsEditValList, FriendsEditValView, FriendsEditValEdit} from '../pages/friends-edit-val';
-import { FriendsSimplePager, FriendsSimplePagerList, FriendsSimplePagerView } from '../pages/friends-simple-pager';
+import {OutletExample, OutletExampleList, OutletExampleView} from '../pages/outlet-example';
+
+import {FriendsListPage} from '../pages/friends-list-page';
+import {FriendsViewPage} from '../pages/friends-view-page';
+import {FriendsEditPage} from '../pages/friends-edit-page';
+
+
+import {ListPagination} from '../pages/list-pagination';
 
 import {AlbumsWebApiList} from '../pages/albums-webapi-list';
 import {AlbumsWebApiView} from '../pages/albums-webapi-view';
@@ -25,40 +29,19 @@ function AppRouter() {
       <Route path="/about" element={<About />} />
 
       {/* Nested Routes example */}
-      <Route path="/friends-simple" element={<FriendsSimple />}>
+      <Route path="/outlet-example" element={<OutletExample />}>
 
         {/* Index routes render into their parent's Outlet at their parent's URL */}
-        <Route index element={<FriendsSimpleList />} />
-        <Route index path=":id" element={<FriendsSimpleView />} />
+        <Route index element={<OutletExampleList />} />
+        <Route index path=":id" element={<OutletExampleView />} />
       </Route>
 
-      {/* Nested Routes */}
-      <Route path="/friends-edit" element={<FriendsEdit />}>
+      <Route path="/friends-list-page" element={<FriendsListPage />} />
+      <Route path="/friends-view-page/:id" element={<FriendsViewPage />} />
+      <Route path="/friends-edit-page/:id" element={<FriendsEditPage />} />
 
-        {/* Index routes render into their parent's Outlet at their parent's URL */}
-        <Route index element={<FriendsEditList />} />
-        <Route index path=":id" element={<FriendsEditView />} />
-        <Route index path=":id/edit" element={<FriendsEditEdit />} />
-      </Route>
-
-      {/* Nested Routes */}
-      <Route path="/friends-edit-val" element={<FriendsEditVal />}>
-
-        {/* Index routes render into their parent's Outlet at their parent's URL */}
-        <Route index element={<FriendsEditValList />} />
-        <Route index path=":id" element={<FriendsEditValView />} />
-        <Route index path=":id/edit" element={<FriendsEditValEdit />} />
-      </Route>
-      
-      {/* Nested Routes */}
-      <Route path="/friends-simple-pager" element={<FriendsSimplePager />}>
-
-        {/* Index routes render into their parent's Outlet at their parent's URL */}
-        <Route index element={<FriendsSimplePagerList />} />
-        <Route index path=":pageNr/page" element={<FriendsSimplePagerList />} />
-        <Route index path=":id/:returnPage" element={<FriendsSimplePagerView />} />
-      </Route>
-
+      <Route path="/list-pagination" element={<ListPagination />} />
+     
       <Route path="/albums-webapi-list" element={<AlbumsWebApiList />} />
       <Route path="/albums-webapi-view/:id" element={<AlbumsWebApiView />} />
       <Route path="/albums-webapi-edit/:id" element={<AlbumsWebApiEdit />} />

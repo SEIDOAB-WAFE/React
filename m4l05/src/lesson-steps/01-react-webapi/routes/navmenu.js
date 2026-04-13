@@ -35,13 +35,12 @@ export default function NavMenu() {
         </NavDropdown>
 
         <NavDropdown title="Lists" id="basic-nav-dropdown">
-        <NavDropdown.Item as={Link} to="../friends-simple">List of friends</NavDropdown.Item>
-        <NavDropdown.Item as={Link} to="../friends-simple-pager">List of friends with pagination</NavDropdown.Item>
+        <NavDropdown.Item as={Link} to="../outlet-example">Outlet Example</NavDropdown.Item>
+        <NavDropdown.Item as={Link} to="../list-pagination">List of friends with pagination</NavDropdown.Item>
         </NavDropdown>
 
         <NavDropdown title="Forms" id="basic-nav-dropdown">
-            <NavDropdown.Item as={Link} to="../friends-edit">List of friends with edit</NavDropdown.Item>
-            <NavDropdown.Item as={Link} to="../friends-edit-val">Edit friends with validation</NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="../friends-list-page">Edit friends with validation</NavDropdown.Item>
         </NavDropdown>
 
         <NavDropdown title="WebApi" id="basic-nav-dropdown">
