@@ -45,7 +45,7 @@ export default function NavMenu() {
         </NavDropdown>
 
         <NavDropdown title="WebApi" id="basic-nav-dropdown">
-          <NavDropdown.Item as={Link} to="../albums-webapi">Edit albums from a WebApi</NavDropdown.Item>
+          <NavDropdown.Item as={Link} to="../albums-webapi-list">Edit albums from a WebApi</NavDropdown.Item>
         </NavDropdown>
 
         </Nav>

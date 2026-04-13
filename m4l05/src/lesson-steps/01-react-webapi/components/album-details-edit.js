@@ -35,6 +35,8 @@ function AlbumDetailsEdit(props) {
       form.classList.add('was-validated')
     }
     else{
+
+      e.editedAlbum = album;
       props.onSave(e);
     }
   }  

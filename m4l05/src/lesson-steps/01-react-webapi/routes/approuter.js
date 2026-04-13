@@ -12,8 +12,11 @@ import {Posts, PostLists, Post} from '../pages/posts';
 import {FriendsSimple, FriendsSimpleList, FriendsSimpleView} from '../pages/friends-simple';
 import {FriendsEdit, FriendsEditList, FriendsEditView, FriendsEditEdit} from '../pages/friends-edit';
 import {FriendsEditVal, FriendsEditValList, FriendsEditValView, FriendsEditValEdit} from '../pages/friends-edit-val';
-import {AlbumsWebApi, AlbumsWebApiList, AlbumsWebApiView, AlbumsWebApiEdit} from '../pages/albums-webapi';
 import { FriendsSimplePager, FriendsSimplePagerList, FriendsSimplePagerView } from '../pages/friends-simple-pager';
+
+import {AlbumsWebApiList} from '../pages/albums-webapi-list';
+import {AlbumsWebApiView} from '../pages/albums-webapi-view';
+import {AlbumsWebApiEdit} from '../pages/albums-webapi-edit';
 
 function AppRouter() {
   return (
@@ -21,7 +24,7 @@ function AppRouter() {
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
 
-      {/* Nested Routes */}
+      {/* Nested Routes example */}
       <Route path="/friends-simple" element={<FriendsSimple />}>
 
         {/* Index routes render into their parent's Outlet at their parent's URL */}
@@ -53,17 +56,13 @@ function AppRouter() {
         {/* Index routes render into their parent's Outlet at their parent's URL */}
         <Route index element={<FriendsSimplePagerList />} />
         <Route index path=":pageNr/page" element={<FriendsSimplePagerList />} />
-s        <Route index path=":id/:returnPage" element={<FriendsSimplePagerView />} />
+        <Route index path=":id/:returnPage" element={<FriendsSimplePagerView />} />
       </Route>
 
-      {/* Nested Routes */}
-      <Route path="/albums-webapi" element={<AlbumsWebApi />}>
-        {/* Index routes render into their parent's Outlet at their parent's URL */}
-        <Route index element={<AlbumsWebApiList />} />
-        <Route index path=":id" element={<AlbumsWebApiView />} />
-        <Route index path=":id/edit" element={<AlbumsWebApiEdit />} />
-      </Route>
-      
+      <Route path="/albums-webapi-list" element={<AlbumsWebApiList />} />
+      <Route path="/albums-webapi-view/:id" element={<AlbumsWebApiView />} />
+      <Route path="/albums-webapi-edit/:id" element={<AlbumsWebApiEdit />} />
+
       {/* Nested Routes */}
       <Route path="/posts" element={<Posts />}>
 
